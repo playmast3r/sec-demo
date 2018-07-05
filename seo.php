@@ -34,6 +34,7 @@ while (file_exists($fileName . $i . $fileExt)) {
 
 $handle = fopen($stopWordsFile, "r");
 $stopWords = fread($handle, filesize($stopWordsFile));
+//get array of stopWords by exploding it
 $stopWords = explode("\r\n", $stopWords);
 
 $topWords = most_frequent_words($inputString, $stopWords, 10);
