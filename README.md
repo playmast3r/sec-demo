@@ -6,6 +6,8 @@
 
 `` sudo apt-get install memcached php-memcached ``
 
+`` sudo service apache2 reload ``
+
 
 ## Questions:
 
